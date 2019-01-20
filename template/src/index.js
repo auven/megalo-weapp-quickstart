@@ -37,7 +37,7 @@ export default {
     subpackages: [
       {
         root: 'packageA',
-        pages: ['pages/a/index', 'pages/todomvc/index']
+        pages: ['pages/a/index', 'pages/todomvc/index', 'pages/minapp-api-promise/index']
       }
     ],
     tabBar: {
@@ -51,6 +51,10 @@ export default {
           text: 'todo'
         }
       ]
+    },
+    usingComponents: {
+      'van-cell': '/custom-component/vant-weapp/dist/cell/index',
+      'van-cell-group': '/custom-component/vant-weapp/dist/cell-group/index'
     },
     _alipay: {
       window: {

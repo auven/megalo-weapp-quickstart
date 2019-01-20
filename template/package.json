@@ -1,7 +1,8 @@
 {
-  "name": "megalo-quickstart",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "",
+  "description": "{{ description }}",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "build:wechat": "node ./build/megalo-cli-service.js --mode production --platform wechat",
@@ -55,6 +56,7 @@
     "@megalo/vhtml-plugin": "^0.1.2",
     "megalo": "^0.7.3",
     "megalo-router-patch": "^0.1.5",
+    "minapp-api-promise": "^1.0.2",
     "octoparse": "^0.3.2",
     "vant-weapp": "^0.5.1"
   },

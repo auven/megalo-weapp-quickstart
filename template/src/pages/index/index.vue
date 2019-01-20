@@ -69,6 +69,10 @@ export default {
         {
           link: '/pages/postcss/index',
           text: 'postcss 测试'
+        },
+        {
+          link: '/packageA/pages/minapp-api-promise/index',
+          text: '微信小程序 API promise 化示例'
         }
       ]
     };

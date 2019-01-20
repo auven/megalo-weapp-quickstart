@@ -149,7 +149,7 @@ function createBaseConfig() {
           use: 'babel-loader'
         },
         {
-          test: /\.css$/,
+          test: /\.(css|wxss)$/,
           use: cssLoaders
         },
         {
