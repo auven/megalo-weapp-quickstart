@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div>minapp-api-promise</div>
     <van-cell-group>
       <van-cell v-for="(value, key) in info" :key="key" :title="key" :value="value"/>
     </van-cell-group>
@@ -30,3 +29,9 @@ export default {
 
 <style>
 </style>
+
+<config>
+{
+  navigationBarTitleText: 'minapp-api-promise'
+}
+</config>

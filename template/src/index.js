@@ -32,7 +32,8 @@ export default {
       'pages/native/index',
       'pages/webview/index',
       'pages/img/index',
-      'pages/postcss/index'
+      'pages/postcss/index',
+      'pages/requestTest/index'
     ],
     subpackages: [
       {

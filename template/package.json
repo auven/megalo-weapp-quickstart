@@ -5,12 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build:wechat": "node ./build/megalo-cli-service.js --mode production --platform wechat",
-    "build:alipay": "node ./build/megalo-cli-service.js --mode production --platform alipay",
-    "build:swan": "node ./build/megalo-cli-service.js --mode production --platform swan",
-    "dev:wechat": "node ./build/megalo-cli-service.js --mode development --platform wechat",
-    "dev:alipay": "node ./build/megalo-cli-service.js --mode development --platform alipay",
-    "dev:swan": "node ./build/megalo-cli-service.js --mode development --platform swan",
+    "build": "node ./build/megalo-cli-service.js --mode production --platform wechat",
+    "dev": "node ./build/megalo-cli-service.js --mode development --platform wechat",
     "link": "npm link @megalo/template-compiler && npm link @megalo/target && npm link megalo/env-plugin && npm link megalo"
   },
   "keywords": [],
@@ -54,6 +50,8 @@
   },
   "dependencies": {
     "@megalo/vhtml-plugin": "^0.1.2",
+    "axios": "^0.18.0",
+    "axios-miniprogram-adapter": "^0.2.2",
     "megalo": "^0.7.3",
     "megalo-router-patch": "^0.1.5",
     "minapp-api-promise": "^1.0.2",

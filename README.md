@@ -1,4 +1,4 @@
-## megalo-quickstart
+## megalo-weapp-quickstart
 
 > 基于 [megalo-demo](https://github.com/kaola-fed/megalo-demo) ，与其保持同步更新。
 
@@ -18,7 +18,7 @@ npm install -g @vue/cli-init
 
 接着就可以初始化项目了
 ``` bash
-vue init auven/megalo-quickstart megalo-project
+vue init auven/megalo-weapp-quickstart megalo-project
 ```
 
 ## 运行
@@ -28,27 +28,8 @@ vue init auven/megalo-quickstart megalo-project
 ```bash
 cd megalo-project
 npm i
-```
-
-微信小程序版本：
-
-```bash
-npm run dev:wechat
-npm run build:wechat
-```
-
-支付宝小程序版本：
-
-```bash
-npm run dev:alipay
-npm run build:alipay
-```
-
-百度智能小程序版本：
-
-```bash
-npm run dev:swan
-npm run build:swan
+npm run dev
+npm run build
 ```
 
 ### 使用微信小程序开发工具打开
@@ -87,4 +68,4 @@ megalo 官方已经支持自动处理图片文件的拷贝了，不过不支持�
 
 ### 注意事项
 
-- 入口文件 `src/index.js` 涉及到添加分包或减少分包的变动，建议重新运行 `npm run dev:wechat`
+- 入口文件 `src/index.js` 添加新页面需要重新运行 `npm run dev`

@@ -73,6 +73,10 @@ export default {
         {
           link: '/packageA/pages/minapp-api-promise/index',
           text: '微信小程序 API promise 化示例'
+        },
+        {
+          link: '/pages/requestTest/index',
+          text: '接口请求测试'
         }
       ]
     };

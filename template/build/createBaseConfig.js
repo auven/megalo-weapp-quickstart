@@ -129,7 +129,9 @@ function createBaseConfig() {
       alias: {
         vue: 'megalo',
         '@': _.resolve('src')
-      }
+      },
+      // 加入 axios 后，必须加这个才不会报错
+      aliasFields: ['browser']
     },
 
     module: {

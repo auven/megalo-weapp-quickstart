@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div>测试 postcss</div>
     <div class="flex">
       <div class="item">item</div>
       <div class="item">item</div>
@@ -26,3 +25,9 @@ export default {}
   background: #7c7c7c;
 }
 </style>
+
+<config>
+{
+  navigationBarTitleText: '测试 postcss'
+}
+</config>
