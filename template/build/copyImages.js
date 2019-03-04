@@ -2,26 +2,16 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const fs = require('fs')
 const fse = require('fs-extra')
 const _ = require('./util')
-const { walk4Obj } = require('./util')
-const exp4parse = /\/\*[^*]*\*+(?:[^\/*][^*]*\*+)*\/|\/\/[^\r\n]*|\s/g
+const { getAppObj } = require('@megalo/entry/lib/util')
 
 // 获取主包images路径和分包images路径
 function copyImages(appMainFile) {
-  let txt = '',
-    mainObj = {},
+  let mainObj = {},
     subpackages = [],
     imagesPath = []
-  /* const mainImagesPath = _.resolve('src/images')
-  fse.ensureDirSync(mainImagesPath)
-  imagesPath.push({
-    from: mainImagesPath,
-    to: _.resolve('dist-wechat/images')
-  }) */
 
   try {
-    txt = fs.readFileSync(appMainFile, 'utf8')
-    txt = txt.replace(exp4parse, '')
-    mainObj = walk4Obj(txt, 'exportdefault')['config'] || {}
+    mainObj = getAppObj(appMainFile) || {}
 
     // 主包
     const mainPackage = mainObj.pages || []

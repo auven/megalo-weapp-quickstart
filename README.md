@@ -1,6 +1,6 @@
 ## megalo-weapp-quickstart
 
-> 基于 [megalo-demo](https://github.com/kaola-fed/megalo-demo) ，与其保持同步更新。
+> 基于 [megalo-demo](https://github.com/kaola-fed/megalo-demo) ，与其保持同步更新。【已更新至2019-02-27的提交】
 
 megalo 项目模板，对微信小程序做了相关的处理。
 
